@@ -1,8 +1,10 @@
-# Comando input(): quero permitir que  o usuario digite algo...
-nome = input("Digite seu nome: ")
-idade = int(input("Digite sua idade: "))
-# Comando de saida...exibir na tela
-print(f"Boa noite! Seu nome é {nome} e, você tem {idade} anos")
+#Pede o nome do aluno e sua nota (de 0 a 10) e, se ele tirou nota 10, mostra "{nome}, você é bichão, mesmo..."
+nome = input("Informe seu nome: ")
+nota = float(input("Digite sua nota: "))
 
-dobro = idade * 2
-print(f"O dobro da sua idade é {dobro}")
+if (nota == 10):
+  print(f"{nome}, você é bichão, mesmo...")
+elif (nota >= 6 and nota < 10):
+  print(f"{nome}, bom trabalho")
+else: # é sempre automaticamente o que as duas condições não tratamento
+  print("Burro, não tirou dez...")
